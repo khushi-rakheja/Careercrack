@@ -1,0 +1,109 @@
+body {
+    font-family: 'Arial', sans-serif; /* Or choose a modern-looking font */
+    margin: 0;
+    background-color: #e3e3e3;
+    color: black; 
+  }
+  
+  .container {
+    max-width: 1100px; /* Limit container width for a focused look */
+    margin: 0 auto; 
+    padding: 20px;
+  }
+  
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav ul li a {
+    color: #85b6b2;
+    text-decoration: none;
+    margin: 0 15px;
+    transition: color 0.2s ease-in-out; /* Smooth transition */
+  }
+  
+  nav ul li a:hover {
+    color: #f8a3a1; 
+  }
+  
+  .hero {
+    background-color: #ed793c;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    border-radius: 8px; /* Slightly round the corners */
+    box-shadow: 0 2px 5px rgba(0,0,0, 0.1); /* Subtle shadow */
+  }
+  
+  .hero-button {
+    background-color: #f8a3a1;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out; 
+  }
+  
+  .hero-button:hover {
+    background-color: #85b6b2; 
+  }
+  
+  .categories {
+    background-color: #f8a3a1;
+    padding: 30px;
+    margin-top: 40px;
+  }
+  
+  .category-cards {
+    display: flex;
+    overflow-x: auto;
+  }
+  
+  .category-card {
+    background-color: white;
+    flex: 0 0 250px; /* Prevent cards from shrinking */
+    margin-right: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+  
+  .featured {
+    background-color: #e3e3e3;
+    padding: 40px 0;
+  }
+  
+  .featured-problems {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .featured-problem {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .difficulty {
+    background-color: #85b6b2;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+  }
+  

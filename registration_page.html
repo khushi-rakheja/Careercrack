@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Orbitron', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #000;
+            margin: 0;
+            padding: 0;
+            background-image: url("https://imgs.search.brave.com/uqmW5GgFL7EHk08Z2MCQynKm145_n7hX5C_Nc1rNcmo/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by9hYnN0cmFjdC1n/cmFkaWVudC1ibGFj/a18xMjU4LTEzODAu/anBnP3NpemU9NjI2/JmV4dD1qcGc");
+          
+            background-repeat: no-repeat;
+            background-attachment: fixed;  
+            background-size: cover;
+            
+        }
+
+        .form {
+            border-radius: 10px;
+            width: 80%;
+            max-width: 600px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);
+            /* margin-top:300px; */
+            margin-top: 300px;
+            
+        }
+
+        .form label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #000;
+        }
+
+        .form h2 {
+            color: #000000;
+            margin-top: 0;
+        }
+
+        .form input[type="text"],
+        .form input[type="number"],
+        .form input[type="file"],
+        .form input[type="date"],
+        .form select,
+        .form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #272525;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-family: 'Orbitron', sans-serif;
+            color: #000;
+        }
+
+        .form button {
+            width: 100%;
+            padding: 15px;
+            background-color: #3b82f6;
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .form button:hover {
+            background-color: #2563eb;
+        }
+
+        .form iframe {
+            width: 100%;
+            height: 200px;
+            border: 1px solid #fff;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        .form input[type="file"] {
+            padding: 6px;
+        }
+
+        .form textarea {
+            resize: vertical;
+        }
+
+        .form input[type="date"] {
+            padding: 6px;
+        }
+
+        .form select {
+            padding: 6px;
+        }
+
+        .form::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
+            
+            border-radius: 10px;
+            opacity: 0.2;
+            
+          
+        }
+
+        @media screen and (max-width: 600px) {
+            .form {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="form">
+        
+        <form action="">
+            <h2>Student Registration Form</h2>
+            <label for="sname">Student Name</label>
+            <input type="text" id="sname" name="student_name">
+
+            <label for="sid">Student Id</label>
+            <input type="number" name="sid" id="sid">
+
+            <label for="upload">Upload Photo</label>
+            <input type="file" id="upload" name="upload" accept="image/jpg, image/jpeg,image/png">
+
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" name="dob" min="2000-01-01">
+
+            <label for="gender">Gender</label>
+            <select id="gender" name="gender">
+                <option value="male">Male</option>
+                <option value="female" selected>Female</option>
+            </select>
+
+            <label for="ad">Address</label>
+            <textarea rows="4" cols="20" id="ad" name="address"></textarea>
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3457.1087648494113!2d76.82013447480091!3d29.947549974972546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390e3f422f5244e7%3A0x9c630c311d6349b8!2sNIT%20KURUKSHETRA!5e0!3m2!1sen!2sin!4v1707208978338!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,361 @@
+
+       
+* {
+    font-family: 'Orbitron', sans-serif;
+}
+
+
+/* *,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+/* Set the background color and text color for the whole page */
+body {
+    background-image: url("Main-background.svg");
+    background-color: #000000;
+    background-position: fixed;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: #333;
+    font-style: normal;
+}
+.eve{
+    color: white;
+    margin-top: 50px;
+}
+
+/* Set the width and margin for the main container */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+.tech{
+   text-align: center;
+   color: #fff;
+   margin-top: 3px;
+
+}
+.tech h3{
+    font-weight: 200;
+  
+ 
+}
+
+
+.tech h1{
+
+    font-weight: 900;
+    font-size: 15vh;
+    text-shadow: 6px 6px rgba(59,130,246,.5);
+    margin:50px auto 17px ;
+    
+    -webkit-text-stroke: 2px rgb(179, 204, 246);
+}
+
+/* Set the display, align-items, and margin for the header section */
+.header {
+    border: 2px solid rgba(59, 131, 246, 0.364);
+    border-radius: 15px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: rgb(0, 0, 0); */
+}
+
+.header h3 {
+    margin: 0;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+}
+
+/* .login {
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+} */
+/* Styling for header section hyperlinks */
+.header-link {
+    text-decoration: none;
+    color: #5e5c5c;
+}
+
+.header-link:hover {
+    color: #6d6f71; /* Change color on hover */
+}
+
+.login {
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none; /* Remove default underline */
+}
+
+.login:hover {
+    background-color: #2563eb; /* Change color on hover */
+}
+
+
+/* Set the font-size, font-weight, and text-transform for the title */
+.title {
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/* Set the display, grid-template-columns, gap, and margin for the events section */
+.events {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin: 20px 0;
+   
+}
+
+/* Set the background-color, border-radius, box-shadow, and overflow for the event card */
+.event-card {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    border:2px #f0f0f0;
+    box-shadow: 0px 0px 10px rgba(242, 238, 238, 0.1);
+    overflow: hidden;
+    margin: auto;
+    
+}
+
+/* Set the height and object-fit for the event image */
+.event-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+
+/* Set the padding for the event info */
+.event-info {
+    padding: 20px;
+}
+
+/* Set the font-size, font-weight, and margin for the event name */
+.event-name {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+/* Set the font-size, font-weight, color, and margin for the event date */
+.event-date {
+    font-size: 18px;
+    font-weight: 500;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+/* Set the font-size, line-height, and margin for the event desc */
+.event-desc {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+/* Set the display, padding, background-color, color, border, border-radius, text-decoration, and cursor for the event link */
+.event-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Set the background-color and color for the event link on hover */
+.event-link:hover {
+    background-color: rgba(59,130,246,1.0);
+    color: #fff;
+}
+button{
+    padding: 6px;
+    outline:none;
+    font-size: 20px;
+    border-radius: 3%;
+}
+#scroller {
+    /* background-color: red; */
+    white-space: nowrap;
+    overflow-x:hidden;
+    overflow-y: hidden;
+    position: relative;
+    z-index: 10;
+  }
+  #scroller::-webkit-scrollbar {
+    display: none;
+  }
+  .scroller-in {
+    display: inline-block;
+    white-space: nowrap;
+    animation-name: scroll;
+    animation-duration: 40s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+  
+  #scroller h4 {
+    display: inline-block;
+    font-size: 60px;
+    font-weight: 900;
+    
+    margin-right: 20px;
+    transition: all linear 0.3s;
+    color: black;
+    -webkit-text-stroke: 2px rgba(59,130,246,1.0);
+  }
+
+
+@keyframes scroll {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+    
+}
+#scroller h4:hover{
+    color: rgba(59,130,246,1.0);
+    -webkit-text-stroke: 2px rgba(59,130,246,1.0);
+  }
+
+
+
+  .footer {
+    background-color: rgba(59,130,246,0.1);
+    border: #3b82f6;
+    border-radius: 6px;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer p {
+    margin: 5px 0;
+}
+
+.element{
+    margin: 55px auto;
+    width: 70vw;
+    height: 80vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:contain;
+    float: center;
+    background-image: url("element.png");
+}
+
+.glass-card-container {
+    width: 100%;
+    max-width: 700px;
+    margin: 20px auto;
+    perspective: 800px;
+  }
+  
+  .glass-card {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 1rem;
+    color: white;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    transform-style: preserve-3d;
+    height:max-content;
+  }
+  
+  .glass-card:hover {
+    box-shadow: 0 15px 45px 0 rgba(31, 38, 135, 0.5);
+    transform: rotateX(2deg) rotateY(-2deg);
+  }
+  
+  .glass-card h1 {
+    font-size: 2rem;
+  }
+  
+  .glass-card p {
+    font-size: 1.1rem;
+    margin: 0.5rem 0;
+  }
+
+
+.mid{
+    text-align: center;
+}
+
+
+.journey {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 1rem;
+}
+
+.glass-card li{
+    /* font-family: sans-serif ; */
+    text-align: left;
+}
+
+/* ... (previous CSS) */
+
+.eve {
+    color: white;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.eve h1 {
+    font-weight: 900;
+    font-size: 6vh;
+    text-shadow: 6px 6px rgba(59,130,246,.5);
+    margin:50px auto 17px ;
+    
+    -webkit-text-stroke: 2px rgb(179, 204, 246);
+}
+
+.tech {
+    text-align: center;
+    color: #fff;
+    margin-top: 3px;
+    margin-bottom: 30px;
+}
+
+.tech h3 {
+    font-weight: 200;
+}
+
+/* ... (remaining CSS) */
+
+.video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

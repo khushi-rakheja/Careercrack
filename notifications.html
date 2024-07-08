@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notifications Page</title>
+    <style>
+        /* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main container styles */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    font-family: 'Orbitron', sans-serif;
+}
+
+/* Header styles */
+.header {
+    background-color: #3b82f6;
+    padding: 20px;
+    text-align: center;
+}
+
+.title {
+    font-size: 36px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+/* Notifications section styles */
+.notifications {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.notification {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(242, 238, 238, 0.1);
+}
+
+.notification h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.notification p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.notification a {
+    text-decoration: none;
+    color: #333;
+}
+
+.notification a:hover {
+    color: #6d6f71;
+}
+
+/* Background image */
+body {
+    background-image: url("https://imgs.search.brave.com/uqmW5GgFL7EHk08Z2MCQynKm145_n7hX5C_Nc1rNcmo/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by9hYnN0cmFjdC1n/cmFkaWVudC1ibGFj/a18xMjU4LTEzODAu/anBnP3NpemU9NjI2/JmV4dD1qcGc");
+    background-size: cover;
+    background-position: center;
+    color: #333; /* Default text color */
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="title">Notifications</h1>
+        </header>
+
+        <div class="notifications">
+            <div class="notification">
+                <h2><a href="#" class="event-link">Techspardha Hackathon</a></h2>
+                <p>A 24-hour coding challenge where you can showcase your skills and win exciting prizes.</p>
+            </div>
+            <div class="notification">
+                <h2><a href="#" class="event-link">Workshop on AI</a></h2>
+                <p>Exciting workshop on Artificial Intelligence scheduled for next week. Don't miss out!</p>
+            </div>
+            <div class="notification">
+                <h2><a href="#" class="event-link">Tech Quiz Competition</a></h2>
+                <p>Quiz competition on the latest technology trends happening tomorrow. Join now!</p>
+            </div>
+            <div class="notification">
+                <h2><a href="#" class="event-link">Product Development Competition</a></h2>
+                <p>Product development competition open for registrations. Get ready to innovate!</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

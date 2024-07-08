@@ -1,0 +1,56 @@
+
+body{
+  background: black;
+}
+.container{
+  display:flex;
+  width:100%;
+}
+.container-right{
+  width:80%;
+}
+.container-left{
+    width:30%;
+}
+.container-left select {
+    /* Common styles for the dropdown element */
+    background-color: #fff; /* Background color */
+    border: 1px solid #ccc; /* Border */
+    border-radius: 4px; /* Rounded corners */
+    color: #333; /* Text color */
+    padding: 5px 10px; /* Padding */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    display: inline-block; /* Display as inline-block */
+    vertical-align: middle; /* Vertical alignment */
+  }
+  
+  .container-left select:focus {
+    /* Style for focused state (optional) */
+    outline: 2px solid #007bff; /* Outline on focus */
+  }
+  .container-left select:after {
+    /* Style the dropdown arrow */
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%); /* Center vertically */
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent; /* Left border for arrow shape */
+    border-right: 5px solid transparent;
+    border-bottom: 8px solid #333; /* Downward arrow */
+  }
+  
+  .container-left select:focus:after {
+    /* Optional styling for focused state arrow */
+    border-bottom-color: #007bff; /* Change arrow color on focus */
+  }
+  .dropdown-toggle{
+    width:60px;
+    height:80px;
+}
+.drodown{
+  float: right;
+}
